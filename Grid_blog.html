@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            grid-template-rows: auto auto 1fr auto;
+            height: 100vh;
+            grid-template-areas: 
+            "title title"
+            "menu sidebar"
+            "content sidebar"
+            "footer footer"
+            ;
+        }
+        .title{
+            grid-area: title;
+            text-align: center;
+            background-color: #006599;
+            color: white;
+            padding:10px;
+        }
+        .menu{
+            grid-area: menu;
+            display: flex;
+            justify-content: space-around;
+            background-color: #006599;
+            color: white;
+            padding:10px;
+            border-top: 2px solid black;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: #002245;
+            color: white;
+        }
+        .content{
+            grid-area: content;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #006599;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="title">
+            <h1>Title</h1>
+        </div>
+        <div class="menu">
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+        <div class="content">
+            <h1>Header</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit aliquam nulla atque cupiditate eius recusandae voluptatibus vel exercitationem, ipsam omnis accusamus quod et sequi similique inventore sunt deserunt, saepe maiores ratione deleniti. Ratione incidunt fuga ad distinctio praesentium ipsum ipsam tempore at accusamus odio quae et, enim quisquam quam fugiat quibusdam, tenetur similique dicta voluptas beatae molestiae reprehenderit corporis. Cum iusto hic corporis incidunt, in vero nostrum illum blanditiis consequuntur sint aperiam pariatur esse itaque temporibus iure voluptate tempore nam labore magnam maiores quos a earum error? Nesciunt, amet, perspiciatis adipisci culpa obcaecati cumque asperiores, cupiditate natus sequi animi quia.</p>
+        </div>
+        <div class="sidebar">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis adipisci numquam. Minima vero repellat, rerum nemo porro nihil sunt nam labore error est amet quisquam cum eius id. Dolore ad exercitationem deserunt reiciendis? Illo officiis sint, fugiat ad laborum incidunt nemo. Accusantium, corporis ducimus. Architecto, libero. Ea, expedita eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="footer"> 
+            <p>Closing Notes</p>
+        </div>
+    </div>
+</body>
+</html>
